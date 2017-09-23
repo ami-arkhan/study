@@ -1,5 +1,5 @@
 # Problem:
-In a directed graph find shortest path from source vertex to destination vertex using Dijkstra's Algorithm.
+In a directed graph find shortest path from source vertex to destination vertex using Dijkstra's algorithm.
 
 
 
