@@ -1,5 +1,5 @@
 # Problem:
-In an undirected graph find minimum spanning tree from source vertex.
+In an undirected graph find minimum spanning tree from source vertex using Prim's Algorithm.
 
 
 
