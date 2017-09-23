@@ -1,5 +1,5 @@
 # Problem:
-Visit vertices from source vertex using BFS (Breadth-First-Search) Algorithm.
+Visit vertices from source vertex using BFS (Breadth-First-Search) algorithm.
 
 
 
