@@ -1,5 +1,5 @@
 # Problem:
-Visit vertices from source vertex using DFS (Depth-First-Search) Algorithm.
+Visit vertices from source vertex using DFS (Depth-First-Search) algorithm.
 
 
 
