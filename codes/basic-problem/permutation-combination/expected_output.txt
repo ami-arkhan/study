@@ -1,0 +1,10 @@
+#1
+ABC
+ACB
+BAC
+BCA
+CAB
+CBA
+AB
+AC
+BC
