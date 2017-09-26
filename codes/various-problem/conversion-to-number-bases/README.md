@@ -1,5 +1,9 @@
 # Problem:
-Find sum of 6 sequencial cryptic value. Cryptic table is given.
+Find 6 continuous cryptographic patterns and calculate sum of the decimal values corresponding to each pattern.
+
+Input string is given as hexadecimal numbers. Numbers ranging from 0 ~ 9 and English capital letters ranging from A ~ F are used.
+
+Cryptographic table contains 10 cryptographic bit patterns corresponds to 0 ~ 9 decimal value.
 
 
 
@@ -16,7 +20,7 @@ Find sum of 6 sequencial cryptic value. Cryptic table is given.
 
 
 # Output:
-#1 31   // #Test case number, Sum of 6 sequencial cryptic values
+#1 31   // #Test case number, Sum of decimal values of 6 continuous cryptographic patterns
 
 #2 26
 
