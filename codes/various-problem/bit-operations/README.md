@@ -1,3 +1,9 @@
+## Learn
+- Base conversions.
+- Basic sequential pattern search.
+
+
+
 ## Problem:
 Read hexadecimal data and find decimal sum of each 7-bit binary number from hexadecimal number. Hexadecimal numbers are given as such that when whole string is converted to binary it will be multiple of 7-bits.
 
