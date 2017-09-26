@@ -5,12 +5,12 @@ double X, result;
 // 10 <= N <= 500000000
 long int N;
 
-// For debugging how many recursion is called to find the solution
+// For debugging how many recursions are called to find the solution
 //int recursion_count;
 
 double power(long int pow)
 {
-	// For debugging how many test recursion is called to find the solution
+	// For debugging how many test recursions are called to find the solution
 	//recursion_count++;
 
 	if (pow == 1)
@@ -32,14 +32,14 @@ int main()
 
 	for (test = 1; test <= T; test++)
 	{
-		// For debugging how many recursion is called to find the solution
+		// For debugging how many recursions are called to find the solution
 		//recursion_count = 0;
 
 		scanf("%lf %ld\n", &X, &N);
 		result = power(N);
 		printf("#%d %0.5lf\n", test, result);
 
-		// For debugging how many recursion is called to find the solution
+		// For debugging how many recursions are called to find the solution
 		//printf("Recursion called: %d\n", recursion_count);
 	}
 
