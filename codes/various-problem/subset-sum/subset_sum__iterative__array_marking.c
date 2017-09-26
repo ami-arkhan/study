@@ -31,7 +31,7 @@ void solveCase()
 	int i, j;
 	/****************************************************************************
 	*	1. Subset generated and empty subset is ignored, hence i starts from 1.	*
-	*	2. Power of 2. For 4 elements, 2^4 = 16 subset is generated.			*
+	*	2. Power of 2. For n elements, 2^n - 1 subsets are generated.			*
 	****************************************************************************/
 	for (i = 1; i < (1 << N); i++)
 	{
