@@ -5,8 +5,8 @@ double X, result;
 // 10 <= N <= 500000000
 long int N;
 
-// For debugging how many iteration is called to find the solution
-//int iterative_count;
+// For debugging how many iterations are called to find the solution
+//int iteration_count;
 
 void power()
 {
@@ -16,8 +16,8 @@ void power()
 	result = 1;
 	for (i = 1; i <= N; i++)
 	{
-		// For debugging how many test iteration is called to find the solution
-		//iterative_count++;
+		// For debugging how many test iterations are called to find the solution
+		//iteration_count++;
 
 		result *= X;
 	}
@@ -32,15 +32,15 @@ int main()
 
 	for (test = 1; test <= T; test++)
 	{
-		// For debugging how many iteration is called to find the solution
-		//iterative_count = 0;
+		// For debugging how many iterations are called to find the solution
+		//iteration_count = 0;
 
 		scanf("%lf %ld\n", &X, &N);
 		power();
 		printf("#%d %0.5lf\n", test, result);
 
-		// For debugging how many iteration is called to find the solution
-		//printf("Iteration called: %d\n", iterative_count);
+		// For debugging how many iterations are called to find the solution
+		//printf("Iteration called: %d\n", iteration_count);
 	}
 
 	return 0;
