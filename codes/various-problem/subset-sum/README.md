@@ -8,7 +8,7 @@
 
 
 ## Problem:
-Find number of sets in which sum of elements is zero and the maximum number of elements in those sets.
+Find the number of subsets in which sum of all elements of the set except empty set is zero and the largest number of elements from those subsets.
 
 
 
@@ -30,7 +30,7 @@ Find number of sets in which sum of elements is zero and the maximum number of e
 
 
 ### Output:
-#1 3 3 // #Test case number, Number of possible sets, Maximum elements in those subsets
+#1 3 3 // #Test case number, Number of possible sets, Largest number of elements in those subsets
 
 #2 1 2
 
