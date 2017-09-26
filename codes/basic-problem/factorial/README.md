@@ -1,6 +1,10 @@
 ## Learn:
 - Store and update calculated value in array, when the result is very big to store in a single variable.
 
+- Problem solving methods:
+  - [x] Resursion.
+  - [x] Iterative.
+
 
 
 ## Problem:
