@@ -1,8 +1,8 @@
 # Problem:
 Read hexadecimal data and find decimal sum of each 7-bit binary number from hexadecimal number. Hexadecimal numbers are given as such that when whole string is converted to binary it will be multiple of 7-bits.
 
-Input hexadecimal numbers are multiple of binary 7-bits and ranges from 7~700 bits.
-Numbers ranging from 0~9 and English capital letters ranging from A~F are used.
+Input hexadecimal numbers are multiple of binary 7-bits and ranges from 7 ~ 700 bits.
+Numbers ranging from 0 ~ 9 and English capital letters ranging from A~F are used.
 
 
 
