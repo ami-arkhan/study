@@ -39,7 +39,7 @@ void solveCase(int index)
 	{
 		/************************************************************************************
 		*	1. Subset generated and empty subset is ignored, hence used must be atleast 1.	*
-		*	2. Power of 2. For n elements, 2^n - 1 subset is generated.						*
+		*	2. Power of 2. For n elements, 2^n - 1 subsets are generated.					*
 		************************************************************************************/
 		sum = 0;
 		element = 0;
