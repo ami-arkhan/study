@@ -1,4 +1,4 @@
-## Learn
+## Learn:
 - Base conversions.
 - Basic sequential pattern search.
 
