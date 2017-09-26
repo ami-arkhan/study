@@ -7,7 +7,7 @@ int N, sum, element, max_element, sum_count, used;
 int Data[SIZE];
 
 // For debugging how many test case is generated to find the solution
-// int case_generated;
+//int case_generated;
 
 void init()
 {
@@ -15,7 +15,7 @@ void init()
 	sum_count = 0;
 
 	// For debugging how many test case is generated to find the solution
-	// case_generated = 0;
+	//case_generated = 0;
 }
 
 void readCase()
@@ -36,7 +36,7 @@ void solveCase()
 	for (i = 1; i < (1 << N); i++)
 	{
 		// For debugging how many test case is generated to find the solution
-		// case_generated++;
+		//case_generated++;
 
 		sum = element = 0;
 		/********************************************
@@ -75,6 +75,9 @@ int main()
 		solveCase();
 
 		printf("#%d %d %d\n", test, sum_count, max_element);
+
+		// For debugging how many test case is generated to find the solution
+		//printf("Case generated: %d\n", case_generated);
 	}
 	return 0;
 }
