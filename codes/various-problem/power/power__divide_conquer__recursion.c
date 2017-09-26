@@ -6,12 +6,12 @@ double X, result;
 long int N;
 
 // For debugging how many recursions are called to find the solution
-//int recursion_count;
+//int recursion_called;
 
 double power(long int pow)
 {
 	// For debugging how many test recursions are called to find the solution
-	//recursion_count++;
+	//recursion_called++;
 
 	if (pow == 1)
 		return X;
@@ -33,14 +33,14 @@ int main()
 	for (test = 1; test <= T; test++)
 	{
 		// For debugging how many recursions are called to find the solution
-		//recursion_count = 0;
+		//recursion_called = 0;
 
 		scanf("%lf %ld\n", &X, &N);
 		result = power(N);
 		printf("#%d %0.5lf\n", test, result);
 
 		// For debugging how many recursions are called to find the solution
-		//printf("Recursion called: %d\n", recursion_count);
+		//printf("Recursion called: %d\n", recursion_called);
 	}
 
 	return 0;
