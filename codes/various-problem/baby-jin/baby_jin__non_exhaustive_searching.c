@@ -7,8 +7,8 @@
 int run, triplet;
 int data[SIZE], digits[DIGIT];
 
-// For debugging how many test case is generated to find the solution
-//int case_generated;
+// For debugging how many cases are checked to find the solution
+//int case_check;
 
 void init()
 {
@@ -18,8 +18,8 @@ void init()
 	for (i = 0; i < DIGIT; i++)
 		digits[i] = 0;
 
-	// For debugging how many test case is generated to find the solution
-	//case_generated = 0;
+	// For debugging how many cases are checked to find the solution
+	//case_check = 0;
 }
 
 void readCase()
@@ -48,8 +48,8 @@ int runCount()
 			************************************************/
 			i--;
 
-			// For debugging how many test case is generated to find the solution
-			//case_generated++;
+			// For debugging how many cases are checked to find the solution
+			//case_check++;
 
 			// Pruning: If both results are found, no need to check further
 			//if (count == 2)
@@ -76,8 +76,8 @@ int tripletCount()
 			****************************************************/
 			i--;
 
-			// For debugging how many test case is generated to find the solution
-			//case_generated++;
+			// For debugging how many cases are checked to find the solution
+			//case_check++;
 
 			// Pruning: If both results are found, no need to check further
 			//if (count == 2)
@@ -121,8 +121,8 @@ int main()
 		else
 			printf("#%d FAIL\n", test);
 
-		// For debugging how many test case is generated to find the solution
-		//printf("Case generated: %d\n", case_generated);
+		// For debugging how many cases are checked to find the solution
+		//printf("Case checked: %d\n", case_check);
 	}
 	return 0;
 }
