@@ -7,7 +7,7 @@ int N, sum, element, max_element, sum_count, used;
 int Data[SIZE];
 
 // For debugging how many test case is generated to find the solution
-// int case_generated;
+//int case_generated;
 
 void init()
 {
@@ -15,7 +15,7 @@ void init()
 	sum_count = 0;
 
 	// For debugging how many test case is generated to find the solution
-	// case_generated = 0;
+	//case_generated = 0;
 }
 
 void readCase()
@@ -37,6 +37,10 @@ void solveCase(int index)
 	// Atleast one element must be taken
 	if (index == N && used != 0)
 	{
+		/************************************************************************************
+		*	1. Subset generated and empty subset is ignored, hence used must be atleast 1.	*
+		*	2. Power of 2. For n elements, 2^n - 1 subset is generated.						*
+		************************************************************************************/
 		sum = 0;
 		element = 0;
 		for (i = 0; i < index; i++)
@@ -49,7 +53,7 @@ void solveCase(int index)
 		}
 
 		// For debugging how many test case is generated to find the solution
-		// case_generated++;
+		//case_generated++;
 
 		if (sum == 0)
 		{
@@ -90,6 +94,9 @@ int main()
 		solveCase(0);
 
 		printf("#%d %d %d\n", test, sum_count, max_element);
+
+		// For debugging how many test case is generated to find the solution
+		//printf("Case generated: %d\n", case_generated);
 	}
 	return 0;
 }
