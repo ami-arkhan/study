@@ -1,7 +1,7 @@
 ## Learn:
 - Exhaustive searching method. Generate all subsets: 2<sup>n</sup>-1 subsets of case generated for n elements. Empty set is excluded. All subsets must be generated for this problem.
 
-- Methods: Iterative and Recursive.
+- Problem solving methods: 'Iterative' and 'Recursive'.
 
 - Used elements marking with: 'array' and 'bits'.
 
