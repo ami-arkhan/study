@@ -1,9 +1,19 @@
-# Problem:
-Find largest rectangular area of a histogram.
+## Learn:
+- Divide and Conquer: Problem is divided into 2 parts and each part is solved.
+
+- Problem solving methods:
+  - [x] Recursion: Each part is recursively called to solve.
 
 
 
-# Input:
+## Problem:
+Find largest rectangular area of the histogram.
+
+Total heights in a histogram are between 10~10000.
+
+
+
+### Input:
 
 20    // Total test cases
 
@@ -21,7 +31,7 @@ Find largest rectangular area of a histogram.
 
 
 
-# Output:
+### Output:
 #1 24   // #Test case number, Largest rectangular area of histogram
 
 #2 30
