@@ -4,7 +4,7 @@
 #define SIZE 20
 
 int N, sum, element, max_element, sum_count, used;
-int Data[SIZE];
+int data[SIZE];
 
 // For debugging how many subsets are generated to find the solution
 //int subsets_generated;
@@ -23,7 +23,7 @@ void readCase()
 	int i;
 	scanf("%d\n", &N);
 	for (i = 0; i < N; i++)
-		scanf("%d ", &Data[i]);
+		scanf("%d ", &data[i]);
 }
 
 void solveCase(int index)
@@ -47,7 +47,7 @@ void solveCase(int index)
 		{
 			if (used&(1 << i))
 			{
-				sum += Data[i];
+				sum += data[i];
 				element++;
 			}
 		}
