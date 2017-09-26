@@ -1,9 +1,9 @@
 ## Learn:
-- Exhaustive searching method. Generate all permutations: n! sets of case generated for n elements.
+- Exhaustive searching method. Generate all subsets: 2<sup>n</sup>-1 subsets of case generated for n elements. Empty set is excluded. All subsets must be generated for this problem.
 
-- Non-Exhaustive searching method. Much faster for this problem.
+- Methods: Iterative and Recursive.
 
-- Pruning: When answer is found no need to generate case for further checking.
+- Used elements marking with: 'array' and 'bits'.
 
 
 
