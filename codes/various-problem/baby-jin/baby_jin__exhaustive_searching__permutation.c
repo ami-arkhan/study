@@ -6,16 +6,16 @@
 int run, triplet, isBabyJin, used;
 int data[SIZE], permutation[SIZE];
 
-// For debugging how many test case is generated to find the solution
-//int case_generated;
+// For debugging how many permutations are generated to find the solution
+//int permutations_generated;
 
 void init()
 {
 	used = 0;
 	isBabyJin = 0;
 
-	// For debugging how many test case is generated to find the solution
-	//case_generated = 0;
+	// For debugging how many permutations are generated to find the solution
+	//permutations_generated = 0;
 }
 
 void readCase()
@@ -61,8 +61,8 @@ void solveCase(int index)
 		triplet = tripletCount();
 		run = runCount();
 
-		// For debugging how many test case is generated to find the solution
-		//case_generated++;
+		// For debugging how many permutations are generated to find the solution
+		//permutations_generated++;
 
 		if (run + triplet == 2)
 			isBabyJin = 1;
@@ -114,8 +114,8 @@ int main()
 		else
 			printf("#%d FAIL\n", test);
 
-		// For debugging how many test case is generated to find the solution
-		//printf("Case generated: %d\n", case_generated);
+		// For debugging how many permutations are generated to find the solution
+		//printf("Permutations generated: %d\n", permutations_generated);
 	}
 	return 0;
 }
