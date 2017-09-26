@@ -1,4 +1,4 @@
-## Learn
+## Learn:
 - Exhaustive searching method. Generate all permutations: n! sets of case generated for n elements.
 
 - Non-Exhaustive searching method. Much faster for this problem.
