@@ -86,7 +86,7 @@ void solveCase(int index)
 			permutation[index] = data[i];
 
 			solveCase(index + 1);
-			// If babygin found, no need to check further: Pruning
+			// Pruning: If babygin found, no need to check further
 			//if (isBabyJin)
 			//	return;
 
