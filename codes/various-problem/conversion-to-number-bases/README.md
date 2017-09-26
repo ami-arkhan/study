@@ -7,7 +7,7 @@
 ## Problem:
 Find 6 continuous cryptographic patterns and calculate sum of the decimal values corresponding to each pattern.
 
-Input string is given as hexadecimal numbers. Numbers ranging from 0 ~ 9 and English capital letters ranging from A ~ F are used.
+Input string length is 50 and is given as hexadecimal numbers. Numbers ranging from 0 ~ 9 and English capital letters ranging from A ~ F are used.
 
 Cryptographic table contains 10 cryptographic bit patterns corresponds to 0 ~ 9 decimal value.
 
