@@ -6,16 +6,16 @@
 int N, sum, element, max_element, sum_count, used;
 int Data[SIZE];
 
-// For debugging how many test case is generated to find the solution
-//int case_generated;
+// For debugging how many subsets are generated to find the solution
+//int subsets_generated;
 
 void init()
 {
 	max_element = 0;
 	sum_count = 0;
 
-	// For debugging how many test case is generated to find the solution
-	//case_generated = 0;
+	// For debugging how many subsets are generated to find the solution
+	//subsets_generated = 0;
 }
 
 void readCase()
@@ -35,13 +35,13 @@ void solveCase()
 	****************************************************************************/
 	for (i = 1; i < (1 << N); i++)
 	{
-		// For debugging how many test case is generated to find the solution
-		//case_generated++;
+		// For debugging how many subsets are generated to find the solution
+		//subsets_generated++;
 
 		sum = element = 0;
 		/********************************************
 		*	1. Checking which element is taken.		*
-		*	2. For 4 elements, 4 bits are checked	*
+		*	2. For n elements, n bits are checked	*
 		********************************************/
 		for (j = 0; j < N; j++)
 		{
@@ -76,8 +76,8 @@ int main()
 
 		printf("#%d %d %d\n", test, sum_count, max_element);
 
-		// For debugging how many test case is generated to find the solution
-		//printf("Case generated: %d\n", case_generated);
+		// For debugging how many subsets are generated to find the solution
+		//printf("Case generated: %d\n", subsets_generated);
 	}
 	return 0;
 }
