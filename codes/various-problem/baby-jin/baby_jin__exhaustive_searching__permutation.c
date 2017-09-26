@@ -7,7 +7,7 @@ int run, triplet, isBabyJin, used;
 int data[SIZE], permutation[SIZE];
 
 // For debugging how many test case is generated to find the solution
-// int case_generated;
+//int case_generated;
 
 void init()
 {
@@ -15,7 +15,7 @@ void init()
 	isBabyJin = 0;
 
 	// For debugging how many test case is generated to find the solution
-	// case_generated = 0;
+	//case_generated = 0;
 }
 
 void readCase()
@@ -62,7 +62,7 @@ void solveCase(int index)
 		run = runCount();
 
 		// For debugging how many test case is generated to find the solution
-		// case_generated++;
+		//case_generated++;
 
 		if (run + triplet == 2)
 			isBabyJin = 1;
@@ -86,9 +86,9 @@ void solveCase(int index)
 			permutation[index] = data[i];
 
 			solveCase(index + 1);
-			// If babygin found, no need to check further
-			if (isBabyJin)
-				return;
+			// If babygin found, no need to check further: Pruning
+			//if (isBabyJin)
+			//	return;
 
 			// Clear bit, when number is not taken
 			used &= ~(1 << i);
@@ -108,6 +108,9 @@ int main()
 		init();
 		readCase();
 		solveCase(0);
+
+		// For debugging how many test case is generated to find the solution
+		//printf("Case generated: %d ", case_generated);
 
 		if (isBabyJin)
 			printf("#%d OK\n", test);
