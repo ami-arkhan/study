@@ -87,8 +87,8 @@ void solveCase(int index)
 
 			solveCase(index + 1);
 			// If babygin found, no need to check further: Pruning
-			if (isBabyJin)
-				return;
+			//if (isBabyJin)
+			//	return;
 
 			// Clear bit, when number is not taken
 			used &= ~(1 << i);
