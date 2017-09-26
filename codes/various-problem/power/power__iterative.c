@@ -40,7 +40,7 @@ int main()
 		printf("#%d %0.5lf\n", test, result);
 
 		// For debugging how many iterations are called to find the solution
-		//printf("Iteration called: %d\n", iteration_count);
+		//printf("Iteration count: %d\n", iteration_count);
 	}
 
 	return 0;
