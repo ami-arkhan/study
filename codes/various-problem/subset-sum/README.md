@@ -1,9 +1,18 @@
-# Problem:
+## Learn:
+- Exhaustive searching method. Generate all permutations: n! sets of case generated for n elements.
+
+- Non-Exhaustive searching method. Much faster for this problem.
+
+- Pruning: When answer is found no need to generate case for further checking.
+
+
+
+## Problem:
 Find number of sets in which sum of elements is zero and the maximum number of elements in those sets.
 
 
 
-# Input:
+### Input:
 20 // Total test cases
 
 4   // Number of elements
@@ -20,7 +29,7 @@ Find number of sets in which sum of elements is zero and the maximum number of e
 
 
 
-# Output:
+### Output:
 #1 3 3 // #Test case number, Number of possible sets, Maximum elements in those subsets
 
 #2 1 2
