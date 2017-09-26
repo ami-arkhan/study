@@ -90,7 +90,7 @@ int main()
 		printf("#%d %d\n", test, max_area);
 
 		// For debugging how many recursions are called to find the solution
-		//printf("Recursion Called: %d\n", recursion_called);
+		//printf("Recursion called: %d\n", recursion_called);
 	}
 	return 0;
 }
