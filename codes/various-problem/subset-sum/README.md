@@ -14,6 +14,8 @@
 ## Problem:
 Find the number of subsets in which sum of all elements of the set except empty set is zero and the largest number of elements from those subsets.
 
+Maximum number of elements: 20.
+
 
 
 ### Input:
