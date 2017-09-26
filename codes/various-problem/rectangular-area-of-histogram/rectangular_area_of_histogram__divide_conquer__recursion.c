@@ -6,6 +6,9 @@
 int N, area, max_area;
 int data[SIZE];
 
+// For debugging how many recursions are called to find the solution
+//int recursion_called;
+
 void readCase()
 {
 	int i;
@@ -45,6 +48,9 @@ void solveCase(int start, int end)
 	*	2. Calculate max area based on lowest height from sub-division.		*
 	************************************************************************/
 
+	// For debugging how many recursions are called to find the solution
+	//recursion_called++;
+
 	// If start index > end index, finish checking
 	if (start > end)
 		return;
@@ -74,11 +80,17 @@ int main()
 
 	for (test = 1; test <= T; test++)
 	{
+		// For debugging how many recursions are called to find the solution
+		//recursion_called = 0;
+
 		max_area = 0;
 		readCase();
 		solveCase(0, N - 1);
 
 		printf("#%d %d\n", test, max_area);
+
+		// For debugging how many recursions are called to find the solution
+		//printf("Recursion Called: %d\n", recursion_called);
 	}
 	return 0;
 }
