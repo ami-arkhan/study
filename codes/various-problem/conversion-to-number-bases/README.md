@@ -1,3 +1,9 @@
+## Learn
+- Base conversions.
+- Basic sequential pattern search.
+
+
+
 ## Problem:
 Find 6 continuous cryptographic patterns and calculate sum of the decimal values corresponding to each pattern.
 
