@@ -87,8 +87,8 @@ void solveCase(int index)
 
 			solveCase(index + 1);
 			// If babygin found, no need to check further: Pruning
-			//if (isBabyJin)
-			//	return;
+			if (isBabyJin)
+				return;
 
 			// Clear bit, when number is not taken
 			used &= ~(1 << i);
@@ -109,13 +109,13 @@ int main()
 		readCase();
 		solveCase(0);
 
-		// For debugging how many test case is generated to find the solution
-		//printf("Case generated: %d ", case_generated);
-
 		if (isBabyJin)
 			printf("#%d OK\n", test);
 		else
 			printf("#%d FAIL\n", test);
+
+		// For debugging how many test case is generated to find the solution
+		//printf("Case generated: %d\n", case_generated);
 	}
 	return 0;
 }
