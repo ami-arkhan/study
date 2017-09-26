@@ -6,16 +6,16 @@
 int N, sum, element, max_element, sum_count, used;
 int Data[SIZE];
 
-// For debugging how many test case is generated to find the solution
-//int case_generated;
+// For debugging how many subsets are generated to find the solution
+//int subsets_generated;
 
 void init()
 {
 	max_element = 0;
 	sum_count = 0;
 
-	// For debugging how many test case is generated to find the solution
-	//case_generated = 0;
+	// For debugging how many subsets are generated to find the solution
+	//subsets_generated = 0;
 }
 
 void readCase()
@@ -52,8 +52,8 @@ void solveCase(int index)
 			}
 		}
 
-		// For debugging how many test case is generated to find the solution
-		//case_generated++;
+		// For debugging how many subsets are generated to find the solution
+		//subsets_generated++;
 
 		if (sum == 0)
 		{
@@ -95,8 +95,8 @@ int main()
 
 		printf("#%d %d %d\n", test, sum_count, max_element);
 
-		// For debugging how many test case is generated to find the solution
-		//printf("Case generated: %d\n", case_generated);
+		// For debugging how many subsets are generated to find the solution
+		//printf("Subsets generated: %d\n", subsets_generated);
 	}
 	return 0;
 }
