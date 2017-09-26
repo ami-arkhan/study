@@ -1,7 +1,7 @@
 ## Learn:
-- Exhaustive searching method. Generate all permutations: n! sets of case generated for n elements.
-
-- Non-Exhaustive searching method. Much faster for this problem.
+- Problem solving methods:
+  - [x] Exhaustive searching method. Generate all permutations: n! sets of case generated for n elements.
+  - [x] Non-Exhaustive searching method. Much faster for this problem.
 
 - Pruning: When answer is found no need to generate case for further checking. 
 
