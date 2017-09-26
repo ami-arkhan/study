@@ -1,9 +1,14 @@
-# Problem:
-Find factorial.
+## Learn:
+- Store and update calculated value in array, when the result is very big to store in a single variable.
 
 
 
-# Input:
+## Problem:
+Find factorial of a given number.
+
+
+
+### Input:
 3   // Total test cases
 
 9   // Input Number
@@ -14,7 +19,7 @@ Find factorial.
 
 
 
-# Output:
+### Output:
 
 #1 9!= 362880   // #Test case number, Number! = Factorial answer
 
