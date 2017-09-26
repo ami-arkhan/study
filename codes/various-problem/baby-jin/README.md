@@ -1,7 +1,9 @@
 ## Learn
-- Exhaustive searching method. Generate all subsets (permutation): 2<sup>n</sup> subsets for n elements.
+- Exhaustive searching method. Generate all permutations: n! sets of case generated for n elements.
 
-- Non-Exhaustive searching method.
+- Non-Exhaustive searching method. Much faster for this problem.
+
+- Pruning: When answer is found no need to generate case for further checking. 
 
 
 
