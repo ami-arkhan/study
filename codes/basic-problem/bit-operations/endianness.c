@@ -11,14 +11,16 @@ void bitPrint(char p)
 int main()
 {
 	char i, *p;
+
 	char a = 0x10;
 	int x = 0x01020304;
+	int y = 123456789;
 
-	printf("In desktop computers, values are stored as little endian:\n");
+	printf("Little-Endians:\n\n");
 	printf("%d = ", a);
 	p = &a;
 	bitPrint(*p);
-	printf("\n");
+	printf("\n\n");
 
 	printf("0%x = ", x);
 	p = (char *) &x;
@@ -27,7 +29,17 @@ int main()
 		bitPrint(*p++);
 		printf(" ");
 	}
-	printf("\n");
+	printf("\n\n");
+
+	printf("%d = ", y);
+	p = (char *)&y;
+	for (i = 0; i < 4; i++)
+	{
+		bitPrint(*p++);
+		printf(" ");
+	}
+	printf("\n\n");
+
 
 	return 0;
 }
