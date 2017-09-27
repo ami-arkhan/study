@@ -11,8 +11,8 @@
 ![picture alt](https://github.com/ami-arkhan/study-materials/blob/master/codes/basic-problem/bit-operations/memory_address.jpg 'Byle Position')
 
 - XOR Operations:
-  - [x] Twice XOR operation returns the original value.
   - [x] Exchanging values without temporary variable.
+  - [x] Same XOR operation twice returns the original value.
 
 - Signed and Unsigned Numbers:
   - [x] Comparison of signed and unsigned number.
