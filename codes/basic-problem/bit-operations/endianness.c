@@ -8,6 +8,22 @@ void bitPrint(char p)
 		printf("%d", (p >> i) & 1);
 }
 
+void convertEndian(int *n)
+{
+	// Method 1
+	char t, *p = (char *) n;
+	t = p[0];
+	p[0] = p[3];
+	p[3] = t;
+
+	t = p[1];
+	p[1] = p[2];
+	p[2] = t;
+
+	// Method 2
+	//*n = (*n << 24) | ((*n << 8) & 0x00ff0000) | ((*n >> 8) & 0x0000ff00) | (*n >> 24);
+}
+
 int main()
 {
 	char i, *p;
@@ -16,11 +32,13 @@ int main()
 	int x = 0x01020304;
 	int y = 123456789;
 
-	printf("Little-Endians:\n\n");
+	printf("------------------\n");
+	printf("1. Little Endians:");
+	printf("\n------------------\n");
 	printf("%d = ", a);
 	p = &a;
 	bitPrint(*p);
-	printf("\n\n");
+	printf(" => Little endian (Single byte, no visible difference).\n\n");
 
 	printf("0%x = ", x);
 	p = (char *) &x;
@@ -29,7 +47,7 @@ int main()
 		bitPrint(*p++);
 		printf(" ");
 	}
-	printf("\n\n");
+	printf(" => Little endian (4 bytes).\n");
 
 	printf("%d = ", y);
 	p = (char *)&y;
@@ -38,8 +56,22 @@ int main()
 		bitPrint(*p++);
 		printf(" ");
 	}
-	printf("\n\n");
+	printf(" => Little endian (4 bytes).\n");
 
+	printf("\n-------------------\n");
+	printf("2. Endian Exchange:");
+	printf("\n-------------------\n");
+
+	printf("0%x = ", x);
+	convertEndian(&x);
+
+	p = (char *)&x;
+	for (i = 0; i < 4; i++)
+	{
+		bitPrint(*p++);
+		printf(" ");
+	}
+	printf("\n => Little endian converted to big endian (4 bytes).\n");
 
 	return 0;
 }
