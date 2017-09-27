@@ -13,7 +13,7 @@ int main()
 	int a = 55;
 	int b = 10;
 	int c = 23;
-	int d = 75;
+	int key = 75;
 
 	printf("-------------------------------------------------\n");
 	printf("1. Changing variables without temporary variable:");
@@ -31,25 +31,22 @@ int main()
 	printf("2. Variable Encryption and Decryption:");
 	printf("\n--------------------------------------\n\n");
 	printf("Initial value:\n");
-	printf("c = %d = ", c);
+	printf("c\t\t = %d = ", c);
 	bitPrint(c);
-	printf("\nd = %d = ", d);
-	bitPrint(d);
-	printf("\n=====================\n");
-	c = c ^ d;
-	printf("c = c^d = %d = ", c);
+	printf("\nkey\t\t = %d = ", key);
+	bitPrint(key);
+	printf("\n=================================\n");
+	c = c ^ key;
+	printf("c = c^key\t = %d = ", c);
 	bitPrint(c);
 	printf(" => Encryption. Number changed.\n", c);
-
-	printf("\nc = %d = ", c);
+	printf("key\t\t = %d = ", key);
+	bitPrint(key);
+	printf("\n=================================\n");
+	c = c ^ key;
+	printf("c = c^key\t = %d = ", c);
 	bitPrint(c);
-	printf("\nd = %d = ", d);
-	bitPrint(d);
-	printf("\n=====================\n");
-	c = c ^ d;
-	printf("c = c^d = %d = ", c);
-	bitPrint(c);
-	printf(" => Decryption. Number returned to it's original value.\n\n", c);
+	printf(" => Decryption. Number retrieved.\n\n", c);
 
 	return 0;
 }
