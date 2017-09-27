@@ -6,9 +6,9 @@
 
   - [x] Converting from little endian to big endian and vice-versa.
 
-![picture alt](https://github.com/ami-arkhan/study-materials/blob/master/codes/basic-problem/bit-operations/endianness.gif 'Byle Position')
-![picture alt](https://github.com/ami-arkhan/study-materials/blob/master/codes/basic-problem/bit-operations/endianness.jpg 'Byle Position')
-![picture alt](https://github.com/ami-arkhan/study-materials/blob/master/codes/basic-problem/bit-operations/memory_address.jpg 'Byle Position')
+![picture alt](https://github.com/ami-arkhan/study-materials/blob/master/codes/basic-problem/bit-operations/endianness.gif 'Endianness')
+![picture alt](https://github.com/ami-arkhan/study-materials/blob/master/codes/basic-problem/bit-operations/endianness.jpg 'Endianness')
+![picture alt](https://github.com/ami-arkhan/study-materials/blob/master/codes/basic-problem/bit-operations/memory_address.jpg 'Memory Address')
 
 - XOR Operations:
   - [x] Exchanging values without temporary variable.
