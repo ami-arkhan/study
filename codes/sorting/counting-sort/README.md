@@ -5,8 +5,7 @@
   - Output data as sorted.
 
 ![picture alt](https://github.com/ami-arkhan/study-materials/blob/master/codes/sorting/counting-sort/count_digits.gif "Count Digits")
-![picture alt](https://github.com/ami-arkhan/study-materials/blob/master/codes/sorting/counting-sort/sum_counted_digits.png "Total Count")
-![picture alt](https://github.com/ami-arkhan/study-materials/blob/master/codes/sorting/counting-sort/result_data.gif "Result")
+![picture alt](https://github.com/ami-arkhan/study-materials/blob/master/codes/sorting/counting-sort/result_data.gif "Result Data")
 
 
 
