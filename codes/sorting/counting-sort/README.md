@@ -1,11 +1,10 @@
 ## Learn:
 - Counting sort method:
   - Count all the data first.
-  - Sum counted data to set index.
-  - Output data as sorted.
+  - Sum counted data to set sorted index locations.
+  - Output data as per index locations.
 
-![picture alt](https://github.com/ami-arkhan/study-materials/blob/master/codes/sorting/counting-sort/count_digits.gif "Count Digits")
-![picture alt](https://github.com/ami-arkhan/study-materials/blob/master/codes/sorting/counting-sort/result_data.gif "Result Data")
+![picture alt](https://github.com/ami-arkhan/study-materials/blob/master/codes/sorting/counting-sort/counting_sort.gif "Counting Sort")
 
 
 
