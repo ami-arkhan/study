@@ -27,6 +27,11 @@ int partition(int low, int high)
 	int index = low;
 	int i, temp;
 
+	// If partition element is single, return index
+	if (low == high)
+		return low;
+
+	// Compare all elements with pivot and make partition
 	for (i = low; i < high; i++)
 	{
 		if (data[i] <= pivot)
