@@ -1,6 +1,6 @@
 ## Learn:
 - Counting sort method:
-  - Count all the data first, each index represents the input data.
+  - Count all the data first, each index represents the input data (or hashing can be used to count several elements into single index).
   - Sum counted data to set sorted index locations.
   - Output data as per index locations.
 
