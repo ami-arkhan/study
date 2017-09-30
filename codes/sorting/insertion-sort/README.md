@@ -2,10 +2,10 @@
 - **Insertion sort method:**
   - Read an element and compare with all previous elements to insert into correct position.
 
-- **Implementation with:**
-  - [x] Array.
-  - [ ] Array with binary search.
-  - [x] Doubly Linked List.
+- **Implementation method:**
+  - [x] Iteration with array.
+  - [ ] Iteration with array and binary search.
+  - [x] Iteration with doubly linked list.
 
 - **Time Complexity:**
   - Best case: **O(n)**.
