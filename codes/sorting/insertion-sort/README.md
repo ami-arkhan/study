@@ -17,6 +17,7 @@
 - **Points to be noted (source: wikipedia +** http://www.geeksforgeeks.org/insertion-sort/**):**
   -  Insertion sort is used when number of elements is small. It can also be useful when input **array** is almost sorted, only few elements are misplaced in complete big **array**.
   - Insertion sort implementation does not require extra space as sorting is done on given input data area.
+  - Each **k+1<sup>th</sup>** element requires comparison with already sorted **k** elements to insert, which is opposite of **Selection Sort**.
   - It is faster while implemented with **array** rather than **linked list**.
     - Unlike arrays, linked list nodes may not be adjacent in memory.
     - Unlike arrays, random access in linked list is not possible. Insertion Sort requires a lot of this kind of access. In linked list to access i’th index, we have to travel each and every node from the head to i’th node as we don’t have continuous block of memory. Therefore, the overhead increases for insertion sort.
