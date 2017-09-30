@@ -1,30 +1,32 @@
 ## Learn:
-- Quick sort method:
-  - Set a pivot element and partition elements (smaller or bigger) based on pivot elements.
+- **Quick sort method:**
+  - Set a pivot element and partition elements (based on smaller or bigger than pivot elements).
     - Select first element as pivot. (Hoare partition scheme)
     - Select last element as pivot (Hoare partition scheme, OR Lomuto partition scheme).
     - Select random element as pivot.
     - Select median as pivot.
-  - Do the sorting for each partition.
+  - Sort each partition separately.
   - Partition Schemes:
     - [x] Lomuto partition scheme.
     - [x] Hoare partition scheme.
 
-- Time Complexity: Best case: O(nlogn); Worst case: O(n<sup>2</sup>).
+- **Time Complexity:**
+    - Best case: **O(nlogn)**
+    - Worst case: **O(n<sup>2</sup>)**.
 
-- Visualization link: https://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html
+- **Visualization link:** https://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html
 
-- Points to be noted (source: http://www.geeksforgeeks.org/quick-sort/):
-  - Quick sort implemented with arrays does not require extra space as sorting is done on given input data area.
-  - It is faster while implemented with Arrays rather than Linked List.
+- **Points to be noted (source:** http://www.geeksforgeeks.org/quick-sort/**):**
+  - Quick sort implemented with **array** does not require extra space as sorting is done on given input data area.
+  - It is faster while implemented with **array** rather than **linked list**.
     - Unlike arrays, linked list nodes may not be adjacent in memory.
     - Unlike arrays, random access in linked list is not possible. Quick Sort requires a lot of this kind of access. In linked list to access i’th index, we have to travel each and every node from the head to i’th node as we don’t have continuous block of memory. Therefore, the overhead increases for quick sort.
 
-- Lomuto Partition Scheme:
+- **Lomuto Partition Scheme**:
 
 ![picture alt](https://github.com/ami-arkhan/study-materials/blob/master/codes/sorting/quick-sort/quick_sort.png "Quick Sort")
 
-- Hoare Partition Scheme:
+- **Hoare Partition Scheme:**
 
 ![picture alt](https://github.com/ami-arkhan/study-materials/blob/master/codes/sorting/quick-sort/quick_sort_animation.gif "Quick Sort Animation")
 
