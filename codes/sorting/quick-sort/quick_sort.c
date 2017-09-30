@@ -75,7 +75,7 @@ void quickSort(int low, int high)
 	}
 }
 
-void print_case()
+void printCase()
 {
 	int i;
 	for (i = 0; i < N; i++)
@@ -95,6 +95,6 @@ int main()
 		quickSort(0, N - 1);
 
 		printf("#%d ", test);
-		print_case();
+		printCase();
 	}
 }
