@@ -29,14 +29,14 @@ void insertionSort()
 		// Store small value
 		key = data[i];
 
-		// Compare with all previous value and move elements
+		// Compare with all previous value and move all intermediate elements
 		j = i - 1;
 		while (j >= 0 && data[j] > key)
 		{
 			data[j + 1] = data[j];
 			j--;
 		}
-		// Insert element
+		// Insert element to correct location
 		data[j + 1] = key;
 	}
 }
