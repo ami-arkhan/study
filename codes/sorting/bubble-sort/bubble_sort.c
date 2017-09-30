@@ -45,8 +45,8 @@ void bubbleSort()
 		}
 
 		// Pruning: If no swapping occured, it means data are already in sorted state
-		if (!isSwapped)
-			break;
+		//if (!isSwapped)
+		//	break;
 
 		index--;
 	}
