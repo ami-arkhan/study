@@ -50,6 +50,8 @@ int hoarePartition(int low, int high)
 		/****************************************************************
 		*	1. If two points intercede, it means partition complete.	*
 		*	2. Insert pivot element between two partition.				*
+		*	3. As 'low' increases and 'high' decreases,					*
+		*		both will intercede at some point.						*
 		****************************************************************/
 		if (low >= high)
 		{
@@ -57,7 +59,8 @@ int hoarePartition(int low, int high)
 			data[pIndex] = data[low];
 			data[low] = temp;
 
-			return;
+			// Pivot element location is: 'low'
+			return low;
 		}
 
 		// Swap two elements to continue partitioning of elements
@@ -65,9 +68,6 @@ int hoarePartition(int low, int high)
 		data[low] = data[high];
 		data[high] = temp;
 	}
-
-	// Because 'low' position indicates pivot element location
-	return low;
 }
 
 void quickSort(int low, int high)
@@ -77,7 +77,7 @@ void quickSort(int low, int high)
 	*	1. Search for partition index and make partition of left and right.	*
 	*	2. When partition is created, move lower values on one side,		*
 	*		and higher values on the other side.							*
-	*	3. By Divide and Conquer, each partition is sorted.					*
+	*	3. Sort each partition.												*
 	************************************************************************/
 
 	if (low < high)
