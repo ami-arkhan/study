@@ -1,11 +1,11 @@
 ## Learn:
 - Quick sort method:
   - Set a pivot element and partition elements (smaller or bigger) based on pivot elements.
-    - Select first element as pivot.
-    - Select last element as pivot (Implemented here).
+    - Select first element as pivot. (Hoare partition scheme)
+    - Select last element as pivot (Hoare partition scheme, OR Lomuto partition scheme).
     - Select random element as pivot.
     - Select median as pivot.
-  - Pivot element position will be between two partition.
+  - In 'lomuto partition scheme' pivot element position will be between next two partition, but in 'hoare partition scheme' pivot element position may not be between two partition.
   - Do the sorting for each partition.
 
 - Time Complexity: Best case: O(nlogn); Worst case: O(n<sup>2</sup>).
