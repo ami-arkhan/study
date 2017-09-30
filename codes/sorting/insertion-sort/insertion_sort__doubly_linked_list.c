@@ -61,7 +61,7 @@ void insertionSort()
 	/****************************************************************************
 	*	Insertion Sort:															*
 	*	1. Search for small value and store it.									*
-	*	2. Compare with all previous value to find correct position to insert.	*
+	*	2. Compare with previously sorted values to find position to insert.	*
 	*	3. Once correct location is located, remove element and update links.	*
 	*	4. Insert element to correct location and update links.					*
 	****************************************************************************/
