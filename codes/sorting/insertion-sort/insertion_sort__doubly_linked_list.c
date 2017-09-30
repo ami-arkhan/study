@@ -49,48 +49,56 @@ void readCase()
 
 void insertionSort()
 {
-	int key, moveRequired;
-	struct node *cur = head;
-	struct node *prev, *temp;
+	int key, removeRequired;
+
+	struct node *temp = head;
+	struct node *prevNode, *cur;
 
 	// If list is empty, that's not possible because atleast 1 data is read
 	if (head->next == NULL)
 		return;
 
-	while (cur->next != NULL)
+	/****************************************************************************
+	*	Insertion Sort:															*
+	*	1. Search for small value and store it.									*
+	*	2. Compare with all previous value to find correct position to insert.	*
+	*	3. Once correct location is located, remove element and update links.	*
+	*	4. Insert element to correct location and update links.					*
+	****************************************************************************/
+	while (temp->next != NULL)
 	{
 		// No more removing and insertion required initially
-		moveRequired = 0;
+		removeRequired = 0;
 
-		cur = cur->next;
-		prev = cur->prev;
-		key = cur->data;
+		temp = temp->next;
+		prevNode = temp->prev;
+		key = temp->data;
 
 		// If previous data is greater than key value, search for correct position to insert
-		while ((prev->data != -1) && (prev->data > key))
+		while ((prevNode->data != -1) && (prevNode->data > key))
 		{
 			// Remove and insertion is required
-			moveRequired = 1;
-			prev = prev->prev;
+			removeRequired = 1;
+			prevNode = prevNode->prev;
 		}
 		// If remove and insertion is required
-		if (moveRequired)
+		if (removeRequired)
 		{
-			// Remove node, store last node position
-			temp = cur->prev;
-			temp->next = cur->next;
+			// Remove node, store last checked node position
+			cur = temp->prev;
+			cur->next = temp->next;
 			// If removing node is not tail node
-			if (cur->next != NULL)
-				cur->next->prev = temp;
+			if (temp->next != NULL)
+				temp->next->prev = cur;
 
 			// Inserting to correct location found previously
-			cur->prev = prev;
-			cur->next = prev->next;
-			cur->next->prev = cur;
-			prev->next = cur;
+			temp->prev = prevNode;
+			temp->next = prevNode->next;
+			temp->next->prev = temp;
+			prevNode->next = temp;
 
-			// Set new current location from previously stored location
-			cur = temp;
+			// Set current location as last checked node position
+			temp = cur;
 		}
 	}
 }
