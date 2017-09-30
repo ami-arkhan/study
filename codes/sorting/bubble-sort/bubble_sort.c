@@ -16,7 +16,7 @@ void readCase()
 
 void bubbleSort()
 {
-	int i, temp, index;
+	int i, temp, index, isSwapped;
 
 	/************************************************************************
 	*	Bubble Sort:														*
@@ -29,6 +29,8 @@ void bubbleSort()
 	index = N;
 	while(index != 0)
 	{
+		// Initially consider that swapping is not required, data already sorted
+		isSwapped = 0;
 		for (i = 1; i < index; i++)
 		{
 			if (data[i - 1] > data[i])
@@ -36,8 +38,16 @@ void bubbleSort()
 				temp = data[i];
 				data[i] = data[i - 1];
 				data[i - 1] = temp;
+
+				// Swap occured
+				isSwapped = 1;
 			}
 		}
+
+		// Pruning: If no swapping occured, it means data are already in sorted state
+		if (!isSwapped)
+			break;
+
 		index--;
 	}
 }
