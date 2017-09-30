@@ -14,7 +14,7 @@ void readCase()
 		scanf("%d ", &data[i]);
 }
 
-void insertionSort()
+void selectionSort()
 {
 	int i, j, minIndex, temp, isMinFound;
 
@@ -65,7 +65,7 @@ int main()
 	for (test = 1; test <= T; test++)
 	{
 		readCase();
-		insertionSort();
+		selectionSort();
 
 		printf("#%d ", test);
 		printCase();
