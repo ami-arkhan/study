@@ -56,7 +56,7 @@ void quickSort(int low, int high)
 	*	1. Search for partition index and make partition of left and right.	*
 	*	2. When partition is created, move lower values on one side,		*
 	*		and higher values on the other side.							*
-	*	3. By Divide and Conquer, each partition is sorted.					*
+	*	3. Sort each partition.												*
 	************************************************************************/
 
 	if (low < high)
