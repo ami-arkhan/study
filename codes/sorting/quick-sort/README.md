@@ -18,7 +18,10 @@
     - Unlike arrays, linked list nodes may not be adjacent in memory.
     - Unlike arrays, random access in linked list is not possible. Quick Sort requires a lot of this kind of access. In linked list to access i’th index, we have to travel each and every node from the head to i’th node as we don’t have continuous block of memory. Therefore, the overhead increases for quick sort.
 
+- Lomuto Partition Scheme:
 ![picture alt](https://github.com/ami-arkhan/study-materials/blob/master/codes/sorting/quick-sort/quick_sort.png "Quick Sort")
+
+- Hoare Partition Scheme:
 ![picture alt](https://github.com/ami-arkhan/study-materials/blob/master/codes/sorting/quick-sort/quick_sort_animation.gif "Quick Sort Animation")
 
 
