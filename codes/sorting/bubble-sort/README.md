@@ -15,12 +15,9 @@
 - **Visualization link:** https://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html
 
 - **Points to be noted (source: wikipedia):**
-  - Bubble sort should be avoided in the case of large collections. It will not be efficient in the case of a reverse-ordered collection.
-  - Bubble sort implemented with **array** or **doubly linked** list does not require extra space as sorting is done on given input data area.
-  - It is faster while implemented with **array** rather than **linked list**.
-    - Unlike arrays, linked list nodes may not be adjacent in memory.
-    - Unlike arrays, random access in linked list is not possible. Bubble Sort requires a lot of this kind of access. In linked list to access i’th index, we have to travel each and every node from the head to i’th node as we don’t have continuous block of memory. Therefore, the overhead increases for quick sort.
-  - If **doubly linked list** is used, it is easy to compare with adjacent value and move the node to correct position. Similar like **array**.
+  - Very tiny code to understand.
+  - Bubble sort implementation does not require extra space as sorting is done on given input data area.
+  - Bubble sort should be avoided in the case of large collections. It will not be efficient in the case of a reverse-ordered collection, as there are many comparisons and writing done in the process.
 
 ![picture alt](https://github.com/ami-arkhan/study-materials/blob/master/codes/sorting/bubble-sort/bubble_sort.gif "Bubble Sort")
 ![picture alt](https://github.com/ami-arkhan/study-materials/blob/master/codes/sorting/bubble-sort/bubble_sort_2.gif "Bubble Sort 2")
