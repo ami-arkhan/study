@@ -18,12 +18,12 @@ void insertionSort()
 {
 	int i, j, key;
 
-	/********************************************************************************
-	*	Insertion Sort:																*
-	*	1. Search for small value and store it.										*
-	*	2. Compare with all previous value and move larger elements one-by-one.		*
-	*	3. Once element is moved, insert stored value into correct location.		*
-	********************************************************************************/
+	/****************************************************************************
+	*	Insertion Sort:															*
+	*	1. Search for small value and store it.									*
+	*	2. Compare with previously sorted values to find position to insert.	*
+	*	3. Once element is moved, insert stored value into correct location.	*
+	****************************************************************************/
 	for (i = 0; i < N; i++)
 	{
 		// Store small value
