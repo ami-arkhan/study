@@ -10,6 +10,10 @@
     - [x] Lomuto partition scheme.
     - [x] Hoare partition scheme.
 
+- **Implementation method:**
+  - [x] Recursive with array following 'Lomuto Partition Scheme'.
+  - [x] Recursive with array following 'Hoare Partition Scheme'.
+
 - **Time Complexity:**
     - Best case: **O(nlogn)**
     - Worst case: **O(n<sup>2</sup>)**.
