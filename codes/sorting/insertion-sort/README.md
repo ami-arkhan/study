@@ -7,7 +7,9 @@
   - [ ] Array with binary search.
   - [x] Doubly Linked List.
 
-- **Time Complexity:** **O(n<sup>2</sup>)**.
+- **Time Complexity:**
+  - Best case: **O(n)**.
+  - Worst case: **O(n<sup>2</sup>)**.
 
 - **Visualization link:** https://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html
 
