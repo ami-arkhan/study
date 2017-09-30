@@ -14,13 +14,14 @@ void readCase()
 		scanf("%d ", &data[i]);
 }
 
-int partition(int low, int high)
+int lomutoPartition(int low, int high)
 {
 	/********************************************************************************
-	*	1. Make an element as pivot element. Here last element is made as pivot.	*
-	*	2. Move smaller and equal elements to left. When all small elements			*
+	*	1. In 'Lomuto Partition Scheme' last element is made as pivot.				*
+	*	2. Move smaller and equal elements to left. When all small elements 		*
 	*		are moved, next index position will be the pivot element position,		*
 	*		because all other elements are larger than the pivot element.			*
+	*	3. Terminate when partition consists of single element.						*
 	********************************************************************************/
 
 	int pivot = data[high];
@@ -31,7 +32,7 @@ int partition(int low, int high)
 	if (low == high)
 		return low;
 
-	// Compare all elements with pivot and make partition
+	// Compare all elements with pivot, set and return pivot location to make partitions
 	for (i = low; i < high; i++)
 	{
 		if (data[i] <= pivot)
@@ -56,7 +57,6 @@ void quickSort(int low, int high)
 	*	2. When partition is created, move lower values on one side,		*
 	*		and higher values on the other side.							*
 	*	3. By Divide and Conquer, each partition is sorted.					*
-	*	4. Terminate when partition consists of single element				*
 	************************************************************************/
 
 	if (low < high)
@@ -64,7 +64,7 @@ void quickSort(int low, int high)
 		int partitionIndex;
 
 		// Get partition point location.
-		partitionIndex = partition(low, high);
+		partitionIndex = lomutoPartition(low, high);
 
 		/****************************************************************
 		*	1. Partition index element is sorted to correct position.	*
@@ -75,7 +75,7 @@ void quickSort(int low, int high)
 	}
 }
 
-void printCase()
+void print_case()
 {
 	int i;
 	for (i = 0; i < N; i++)
@@ -95,6 +95,6 @@ int main()
 		quickSort(0, N - 1);
 
 		printf("#%d ", test);
-		printCase();
+		print_case();
 	}
 }
