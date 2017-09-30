@@ -4,7 +4,7 @@
 
 - **Implementation with:**
   - [x] Array.
-  - [x] Array with binary search.
+  - [ ] Array with binary search.
   - [x] Doubly Linked List.
 
 - **Time Complexity:** **O(n<sup>2</sup>)**.
