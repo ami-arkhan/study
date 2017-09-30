@@ -4,6 +4,9 @@
   - Sum counted data to set sorted index locations.
   - Output data as per index locations.
 
+- **Implementation method:**
+  - [x] Iteration with array.
+
 - **Time Complexity:** **O(n+k)**, where **n** is the number of elements in input array and **k** is the range of input.
 
 - **Visualization link:** https://www.cs.usfca.edu/~galles/visualization/CountingSort.html
