@@ -13,12 +13,13 @@
 
 - **Points to be noted (source: wikipedia):**
   - Selection sort implementation does not require extra space as sorting is done on given input data area.
-  - Each **k+1<sup>th</sup>** element requires comparison with remaining **n-k** elements to select correct element, which is opposite of **Insertion Sort**.
-  - Using **linked list** makes add and remove efficient. In this case minimum element is removed from the remainder of the list, and then insert it at the end of the values sorted so far.
+  - Each **k+1<sup>th</sup>** element requires comparison with all remaining **n-k** elements to find minimum element to replace with, which is opposite of **Insertion Sort**.
+  - Using **linked list** makes add and remove efficient. In this case minimum element is removed from the remainder of the list, and then insert it at the end of the values sorted so far. So no need to traverse list from head or tail to find proper location to insert, as insertion is done sequentially from start position.
+  - As elements are entered from start position, **doubly linked list** is not required to improve performance, which is opposite of **Insertion Sort**.
 
-![picture alt](https://github.com/ami-arkhan/study-materials/tree/master/codes/sorting/selection-sort/selection_sort.gif "Selection Sort")
-![picture alt](https://github.com/ami-arkhan/study-materials/tree/master/codes/sorting/selection-sort/selection_sort_2.gif "Selection Sort 2")
-![picture alt](https://github.com/ami-arkhan/study-materials/tree/master/codes/sorting/selection-sort/selection_sort_3.gif "Selection Sort 3")
+![picture alt](https://github.com/ami-arkhan/study-materials/blob/master/codes/sorting/selection-sort/selection_sort.gif "Selection Sort")
+![picture alt](https://github.com/ami-arkhan/study-materials/blob/master/codes/sorting/selection-sort/selection_sort_2.gif "Selection Sort 2")
+![picture alt](https://github.com/ami-arkhan/study-materials/blob/master/codes/sorting/selection-sort/selection_sort_3.gif "Selection Sort 3")
 
 
 
