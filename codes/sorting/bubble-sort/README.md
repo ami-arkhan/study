@@ -4,9 +4,9 @@
   - Once last position is reached, element is sorted.
   - Repeat from the beginning for next element.
 
-- **Implementation:**
-    - [x] Array.
-    - [ ] Doubly Linked List.
+- **Implementation method:**
+  - [x] Iterative with array/
+  - [ ] Iterative with Doubly Linked List.
 
 - **Time Complexity:**
     - Best case: **O(n)**
