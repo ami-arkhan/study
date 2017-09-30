@@ -41,7 +41,7 @@ void insertionSort()
 	}
 }
 
-void print_case()
+void printCase()
 {
 	int i;
 	for (i = 0; i < N; i++)
@@ -61,6 +61,6 @@ int main()
 		insertionSort();
 
 		printf("#%d ", test);
-		print_case();
+		printCase();
 	}
 }
