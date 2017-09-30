@@ -17,7 +17,7 @@ void readCase()
 void bubbleSort()
 {
 	int i, temp, index;
-	
+
 	// Pruning: If sorting complete early stop checking
 	//int isSwapped;
 
@@ -42,8 +42,8 @@ void bubbleSort()
 				data[i] = data[i - 1];
 				data[i - 1] = temp;
 
-				// Swap occured
-				isSwapped = 1;
+				// Pruning: Swap occured
+				//isSwapped = 1;
 			}
 		}
 
