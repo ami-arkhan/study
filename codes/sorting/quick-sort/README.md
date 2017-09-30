@@ -5,7 +5,6 @@
     - Select last element as pivot (Hoare partition scheme, OR Lomuto partition scheme).
     - Select random element as pivot.
     - Select median as pivot.
-  - In 'lomuto partition scheme' pivot element position will be between next two partition, but in 'hoare partition scheme' pivot element position may not be between two partition.
   - Do the sorting for each partition.
 
 - Time Complexity: Best case: O(nlogn); Worst case: O(n<sup>2</sup>).
