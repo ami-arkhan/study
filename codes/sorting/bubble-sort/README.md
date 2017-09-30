@@ -5,8 +5,8 @@
   - Repeat from the beginning for next element.
 
 - **Implementation method:**
-  - [x] Iterative with array/
-  - [ ] Iterative with Doubly Linked List.
+  - [x] Iteration with array.
+  - [ ] Iteration with doubly linked list.
 
 - **Time Complexity:**
     - Best case: **O(n)**
