@@ -35,7 +35,7 @@ void readCase()
 {
 	int i, data;
 
-	// Initial head with dummy value
+	// Initialize head with dummy value
 	head = createNode(-1);
 
 	scanf("%d\n", &N);
