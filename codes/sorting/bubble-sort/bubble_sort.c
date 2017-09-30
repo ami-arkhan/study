@@ -18,13 +18,13 @@ void bubbleSort()
 {
 	int i, temp, index, isSwapped;
 
-	/************************************************************************
-	*	Bubble Sort:														*
-	*	1. Move large elements sequentially to last index.					*
-	*	2. Once last index is reached, element position is fixed.			*
-	*	3. Reduce last index position and repeat process untill				*
-	*		all elements are sorted.										*
-	************************************************************************/
+	/****************************************************************
+	*	Bubble Sort:												*
+	*	1. Move large elements sequentially to last index.			*
+	*	2. Once last index is reached, element is sorted.			*
+	*	3. Reduce last index position and repeat process untill		*
+	*		all elements are sorted.								*
+	****************************************************************/
 
 	index = N;
 	while(index != 0)
