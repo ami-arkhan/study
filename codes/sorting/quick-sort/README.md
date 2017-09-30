@@ -6,6 +6,9 @@
     - Select random element as pivot.
     - Select median as pivot.
   - Do the sorting for each partition.
+  - Partition Schemes:
+    - [x] Lomuto partition scheme.
+    - [x] Hoare partition scheme.
 
 - Time Complexity: Best case: O(nlogn); Worst case: O(n<sup>2</sup>).
 
