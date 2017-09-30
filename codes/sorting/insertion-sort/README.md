@@ -1,14 +1,17 @@
 ## Learn:
-- Insertion sort method:
+- **Insertion sort method:**
   - Read an element and compare with all previous elements to insert into correct position.
 
-- Implementation with array, array with binary search, and doubly linked list.
+- **Implementation with:**
+  - [x] Array.
+  - [x] Array with binary search.
+  - [x] Doubly Linked List.
 
-- Time Complexity: **O(n<sup>2</sup>)**.
+- **Time Complexity:** **O(n<sup>2</sup>)**.
 
-- Visualization link: https://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html
+- **Visualization link:** https://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html
 
-- Points to be noted (source: wikipedia + http://www.geeksforgeeks.org/insertion-sort/):
+- **Points to be noted (source: wikipedia +** http://www.geeksforgeeks.org/insertion-sort/**):**
   -  Insertion sort is used when number of elements is small. It can also be useful when input **array** or **doubly linked list** is almost sorted, only few elements are misplaced in complete big **array** or **doubly linked list**.
   - Insertion sort implemented with **array** or **doubly linked list** does not require extra space as sorting is done on given input data area.
   - It is faster while implemented with **array** rather than **linked list**.
