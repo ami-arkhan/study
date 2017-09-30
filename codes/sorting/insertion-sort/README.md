@@ -14,7 +14,7 @@
   - It is faster while implemented with Arrays rather than Linked List.
     - Unlike arrays, linked list nodes may not be adjacent in memory.
     - Unlike arrays, random access in linked list is not possible. Insertion Sort requires a lot of this kind of access. In linked list to access i’th index, we have to travel each and every node from the head to i’th node as we don’t have continuous block of memory. Therefore, the overhead increases for insertion sort.
-    - If Doubly linked list is used, it is easy to compare with previous value and move the node to correct position.
+  - If Doubly linked list is used, it is easy to compare with previous value and move the node to correct position.
 
 ![picture alt](https://github.com/ami-arkhan/study-materials/blob/master/codes/sorting/insertion-sort/insertion_sort.png "Insertion Sort")
 ![picture alt](https://github.com/ami-arkhan/study-materials/blob/master/codes/sorting/insertion-sort/insertion_sort.jpg "Inserion Sort")
