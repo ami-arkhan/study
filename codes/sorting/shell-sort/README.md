@@ -1,9 +1,8 @@
 ## Learn:
 - **Shell sort method:**
-  - Start from initial index and sort within certain gapped elements like insertion sort.
-  - Once all are sorted, reduce gap and keep sorting.
+  - Sort elements like insertion sort, but within a gap.	.
+  - Once all elements are sorted, reduce gap and keep sorting.
   - When gap reduced to one, it will be like insertion sort, but with minimum changes.
-  - It is generalization of "insertion sort".
 
 - **Implementation method:**
     - [x] Iteration with array.
