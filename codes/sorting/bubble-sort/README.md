@@ -50,7 +50,7 @@
 
 
 ### Output:
-#1 1 3 4 5 9    // #Test case number, Sorted data using quick sort
+#1 1 3 4 5 9    // #Test case number, Sorted data using bubble sort
 
 #2 0 1 2 3 4
 
