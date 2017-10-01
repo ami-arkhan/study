@@ -12,7 +12,7 @@
 
 - **Visualization link:** https://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html
 
-- **Points to be noted (source: wikipedia):**
+- **Points to be noted (source: wikipedia +** http://www.geeksforgeeks.org/merge-sort/**):**
   - Merge sort implemented with **linked list** does not require extra space as sorting is done on given input data area. But implemented with **array** requires extra spaces.
   - Merge Sort is useful for sorting **linked lists** in **O(nLogn)** time. In case of **linked lists** the case is different mainly due to difference in memory allocation of **arrays** and **linked lists**.
     - Unlike arrays, linked list nodes may not be adjacent in memory.
