@@ -6,7 +6,7 @@
 
 - **Implementation method:**
   - [x] Iteration with array.
-  - [ ] Iteration with doubly linked list.
+  - [x] Recursive with array.
 
 - **Time Complexity:**
     - Best case: **O(n)**
