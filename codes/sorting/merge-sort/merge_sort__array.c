@@ -63,19 +63,19 @@ void mergeSort(int low, int high)
 	{
 		/****************************************************************
 		*	Merge Sort:													*
-		*	1. Find middle point to divide elements into two halves.	*
-		*	2. Recursively call for merge sort for two halves.			*
-		*	3. Merge the two sorted halves.								*
+		*	1. Find middle point to divide elements into two parts.		*
+		*	2. Recursively call for merge sort for two parts.			*
+		*	3. Merge the two sorted parts.								*
 		*	4. Middle is calculated differently. This is to avoid		*
 		*		overflow, when 'high + low' becomes very large.			*
 		****************************************************************/
 		mid = low + (high-low) / 2;
 
-		// Divide elements into 2 halves
+		// Merge sort for two divided parts
 		mergeSort(low, mid);
 		mergeSort(mid + 1, high);
 
-		// Merge 2 halves
+		// Merge two parts
 		merge(low, mid, high);
 	}
 }
