@@ -2,7 +2,11 @@
 - **Merge sort method:**
   - Find middle point to divide elements into two halves.
   - Recursively call for merge sort for both halves.
-  - Merge the two sorted halves.		
+  - Merge the two sorted halves.
+
+- **Divide linked list:**
+  - Throw 2 pointers, one slower and one faster till faster one reaches the end point.
+  - Slower pointer marks the end of 1st slice and beginning of 2nd slice of linked list.
 
 - **Implementation method:**
     - [x] Recursive with array.
