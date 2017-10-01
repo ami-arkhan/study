@@ -25,7 +25,11 @@
     - Merge sort accesses data sequentially and the need of random access is low.
   - As of ***Perl 5.8***, **merge sort** is its default sorting algorithm (it was **quicksort** in previous versions of ***Perl***). In ***Java***, the ***Arrays.sort()*** methods use **merge sort** or a **tuned quicksort** depending on the datatypes and for implementation efficiency switch to **insertion sort** when fewer than seven array elements are being sorted. The ***Linux kernel*** uses **merge sort** for its linked lists. ***Python*** uses **Timsort**, another **tuned hybrid of merge sort and insertion sort**, that has become the standard sort algorithm in ***Java SE 7***, on the ***Android platform***, and in ***GNU Octave***.
 
+- **Merge sort animation:**
+
 ![picture alt](https://github.com/ami-arkhan/study-materials/blob/master/codes/sorting/merge-sort/merge_sort.gif "Merge Sort Animation")
+
+- **Merge sort image:**
 
 ![picture alt](https://github.com/ami-arkhan/study-materials/blob/master/codes/sorting/merge-sort/merge_sort.png "Merge Sort")
 
