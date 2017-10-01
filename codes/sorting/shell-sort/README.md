@@ -8,7 +8,9 @@
     - [x] Iteration with array.
     - [ ] Iteration with linked list.
 
-- **Time Complexity:** **O(n<sup>2</sup>)**, when gap is **Lower bound of [N/2<sup>k</sup>] (k>=1)**.
+- **Time Complexity:**
+    - When gap is **Lower bound of [N/2<sup>k</sup>], where k>=1**: **O(n<sup>2</sup>)**.
+    - For other gap: see **wikipedia**.
 
 - **Visualization link:** https://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html
 
@@ -16,6 +18,10 @@
   - **Shell sort** is a generalization of **insertion sort** that allows the exchange of items that are far apart. The idea is to arrange the list of elements so that, starting anywhere, considering every hth element gives a sorted list. Such a list is said to be h-sorted.
   - Selection sort implementation does not require extra space as sorting is done on given input data area.
   - An implementation of **shell sort** is present in the Linux kernel.
+  - It is faster while implemented with **array** rather than **linked list**.
+    - Unlike arrays, linked list nodes may not be adjacent in memory.
+    - Unlike arrays, random access in linked list is not possible. Shell Sort requires a lot of this kind of access. In linked list to access i’th index, we have to travel each and every node from the head to i’th node as we don’t have continuous block of memory. Therefore, the overhead increases for shell sort.
+  - If gap value is changed, time complexity also changes. See **wikipedia**.
 
 ![picture alt](https://github.com/ami-arkhan/study-materials/blob/master/codes/sorting/shell-sort/shell_sort.jpg "Shell Sort")
 ![picture alt](https://github.com/ami-arkhan/study-materials/blob/master/codes/sorting/shell-sort/shell_sort.gif "Shell Sort Animation")
